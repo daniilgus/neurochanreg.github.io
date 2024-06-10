@@ -24,31 +24,30 @@
                 <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#">О нас</a></li>-->
                         <li class="nav-item"><a class="nav-link" href="#">Токены</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Поддержка</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://t.me/neurochan_support">Поддержка</a></li>
                         <li class="nav-item" id="login-button">
                             <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
                             <script type="text/javascript">
                               function onTelegramAuth(user) {
-                                // Изменяем текст кнопки на "Выйти"
+                          
                                 document.getElementById('login-button').innerHTML = `
                                   <img src="${user.photo_url}" alt="Аватар" class="avatar">
                                   <span class="username">${user.username ? '@' + user.username : user.first_name + ' ' + user.last_name}</span>
                                   <button class="btn btn-outline-light" id="logout-button" onclick="onTelegramLogout()">Выйти</button>
                                 `;
 
-                                // Сохраняем данные пользователя в localStorage
+                            
                                 localStorage.setItem('telegramUser', JSON.stringify(user));
 
-                                // alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+                                
                               }
 
                               function onTelegramLogout() {
-                                // Удаляем данные из localStorage
+
                                 localStorage.removeItem('telegramUser');
 
-                                // Возвращаем кнопку входа
                                 document.getElementById('login-button').innerHTML = '<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"/>';
                               }
                             </script>
@@ -61,17 +60,17 @@
 
     <section class="content-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row align-items-center"> 
+                <div class="col-md-12 col-lg-6 order-lg-1"> 
                     <img src="img/img2-transformed.png" alt="Картинка" class="img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12 col-lg-6 order-lg-2">
                     <h2>Neurochan - Аниме бот</h2>
                     <p>
                         Neurochan - это бот, который создаёт потрясающие аниме арты по твоему описанию! <br>
                         <br>
                         Просто напиши, что ты хочешь видеть: <br>    
-
+    
                         1. Быстрая генерация: Получай свой арт всего за несколько секунд. <br>
                         2. Высокое качество: Детализированные изображения с яркими цветами. <br>
                         3. Разнообразие стилей: От милого до эпичного, Neurochan может создать всё! <br>
@@ -85,8 +84,15 @@
     </section>
 
     <main></main>
-    <footer>
-
+    <footer class="content-section">
+        <div class="container">
+            <p class="text-center">Copyright © 2024 Neurochan. Все права защищены.</p>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="https://t.me/neurochan_ai">Сообщество ТГ</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://t.me/neurochan_ai_bot">Neurochan - Бот</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://t.me/neurochan_support">Саппорт</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
