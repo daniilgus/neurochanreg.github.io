@@ -31,16 +31,23 @@
                             <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
                             <script type="text/javascript">
                               function onTelegramAuth(user) {
+                                // Изменяем текст кнопки на "Выйти"
                                 document.getElementById('login-button').innerHTML = '<button class="btn btn-outline-light" id="logout-button" onclick="onTelegramLogout()">Выйти</button>';
-                                
+                            
+                                // Сохраняем данные пользователя в localStorage
+                                localStorage.setItem('telegramUser', JSON.stringify(user));
+                            
                                 alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
                               }
-                              
+                            
                               function onTelegramLogout() {
+                                // Удаляем данные из localStorage
                                 localStorage.removeItem('telegramUser');
-                                document.getElementById('login-button').innerHTML = <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+                            
+                                // Возвращаем кнопку входа
+                                document.getElementById('login-button').innerHTML = '<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>';
                               }
-                            </script>
+                            }</script>
                         </li>
                     </ul>
                 </div>
