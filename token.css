@@ -186,6 +186,7 @@
   }
   
   @media (max-width: 768px) {
+      
     body {
       overflow: scroll;
     }
@@ -262,4 +263,12 @@
     footer .nav {
       flex-direction: column;
     }
+
+      .footer-content-section .container {
+    max-width: 100%;
+  }
+
+  .footer-content-section .footer-nav {
+    flex-direction: column;
+  }
   }
