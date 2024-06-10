@@ -127,6 +127,14 @@ body {
   right: 2%;
   position: absolute;
 }
+.by-gus {
+  font-size: 5px;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 1rem;
+  text-align: right;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .logo {
@@ -209,10 +217,3 @@ body {
   }
 }
 
-.by-gus {
-  font-size: 5px;
-  color: #fff;
-  opacity: 0.5;
-  margin-top: 1rem;
-  text-align: right;
-}
