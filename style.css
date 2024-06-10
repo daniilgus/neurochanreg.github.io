@@ -128,7 +128,7 @@ body {
     position: absolute;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px; max-width:600px;) {
     .logo{
         width: 30%;
     }
