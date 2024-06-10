@@ -129,7 +129,7 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .logo{
-        width: 50%;
+        width: 30%;
     }
 
     body{
