@@ -210,8 +210,9 @@ body {
 }
 
 .by-gus {
-  font-size: 10px;
+  font-size: 5px;
   color: #fff;
   opacity: 0.5;
   margin-top: 1rem;
+  text-align: right;
 }
