@@ -14,7 +14,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
 }
 
 
@@ -124,6 +123,11 @@ body {
     color: #0003be;
 }
 
+.navbar-toggler{
+    right: 2%;
+    position: absolute;
+}
+
 @media (max-width: 768px) {
     .header-bg .container {
         max-width: 100%;
@@ -145,8 +149,12 @@ body {
         margin: 1rem 0;
     }
 
+    div.col-md-12.col-lg-6.order-lg-2{
+        text-align: center;
+    }
+
     .content-section img {
-        width: 80%;
+        width: 50%;
         margin: 1rem 0;
     }
 
@@ -166,3 +174,5 @@ body {
         flex-direction: column;
     }
 }
+
+
