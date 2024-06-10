@@ -48,7 +48,7 @@ body {
 }
 
 .navbar-nav .nav-link{
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -88,7 +88,6 @@ body {
 
 .content-section .row {
     display: flex;
-    align-items: center;
 }
 
 .content-section .col-md-6 {
