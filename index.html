@@ -27,11 +27,21 @@
                         <li class="nav-item"><a class="nav-link" href="#">О нас</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Токены</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Поддержка</a></li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="login-button">
                             <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
                             <script type="text/javascript">
                               function onTelegramAuth(user) {
+                                // Изменяем текст кнопки на "Выйти"
+                                document.getElementById('login-button').innerHTML = '<button class="btn btn-outline-light" id="logout-button" onclick="onTelegramLogout()">Выйти</button>';
+                                
                                 alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+                              }
+                              
+                              function onTelegramLogout() {
+                                // Очищаем localStorage
+                                localStorage.removeItem('telegramUser');
+                                // Возвращаем кнопку входа
+                                document.getElementById('login-button').innerHTML = '<script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="NeurochanReg_bot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>';
                               }
                             </script>
                         </li>
@@ -62,7 +72,6 @@
                     </p>
                     <br>
                     <a href="https://t.me/NeurochanBot" class="btn btn-primary">Попробовать</a> </div>
-                </div>
             </div>
         </div>
     </section>
