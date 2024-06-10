@@ -127,8 +127,8 @@ body {
   right: 2%;
   position: absolute;
 }
-.by-gus {
-  font-size: 8px;
+p.by-gus {
+  font-size: 5px;
   color: #fff;
   opacity: 0.5;
   margin-top: 1rem;
@@ -145,8 +145,8 @@ body {
     overflow: scroll;
   }
 
-  .by-gus {
-  font-size: 8px;
+  p.by-gus {
+  font-size: 5px;
 }
 }
 
@@ -155,8 +155,8 @@ body {
     overflow: scroll;
   }
 
-  .by-gus {
-  font-size: 8px;
+  p.by-gus {
+  font-size: 5px;
 }
 
   .nav-link {
