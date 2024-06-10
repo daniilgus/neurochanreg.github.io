@@ -144,12 +144,24 @@ body {
   body {
     overflow: scroll;
   }
+
+  .by-gus {
+  font-size: 8px;
+}
 }
 
 @media (max-width: 768px) {
   body {
     overflow: scroll;
   }
+
+  .by-gus {
+  font-size: 8px;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 1rem;
+  text-align: right;
+}
 
   .nav-link {
     color: #fff;
