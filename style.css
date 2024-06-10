@@ -129,6 +129,27 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .nav-link {
+    color: #fff;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.nav-link:hover {
+    color: #0003be;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.nav-link:focus {
+    outline: none; /* Убираем фокус */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.nav-link:active {
+    outline: none; /* Убираем фокус */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+    
     .header-bg .container {
         max-width: 100%;
     }
